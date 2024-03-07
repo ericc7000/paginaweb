@@ -1,0 +1,154 @@
+ 
+header {    /* CODIGO PARA MODFICAR LA ESTRUCTURA */
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 1%;
+} 
+
+button {  /* CODIGO PARA MODFICAR LA ESTRUCTURA */
+  padding-left: 90px; 
+}
+
+button {  /* CODIGO PARA EL BOTO */
+  margin-left: 0.5em;
+}
+
+body { /* CODIGO PARA MODFICAR EL CALENDARI */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+
+.menu-container { /* CODIGO PARA MODFICAR EL CALENDARI */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.menu-btn { /* CODIGO PARA MODFICAR EL CALENDARI */
+  border: none;
+  color: gainsboro;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-content { /* CODIGO PARA MODFICAR EL CALENDARI */
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #333;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-content a { /* CODIGO PARA MODFICAR EL CALENDARI */
+  color: gainsboro;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+}
+
+.menu-content a:hover { /* CODIGO PARA MODFICAR EL CALENDARI */
+  background-color: #555;
+}
+
+body { /* CODIGO PARA MODFICAR EL CALENDARI */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body { /* CODIGO PARA MODFICAR EL MENÚ */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header { /* CODIGO PARA MODFICAR EL MENÚ */
+  background-color: gainsboro;
+}
+
+nav { /* CODIGO PARA MODFICAR EL MENÚ */
+  background-color: gainsboro;
+  overflow: hidden;
+}
+
+nav a {  /* CODIGO PARA MODFICAR EL MENÚ */
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover { /* CODIGO PARA MODFICAR EL MENÚ */
+  background-color: #899aa7;
+  color: white;
+  background: #899aa7;
+}
+
+
+
+.menu{   /* CODIGO PARA MODFICAR EL FONDO DEL MENU */
+background-color: black;
+width: 100%;
+text-align: left;
+
+}
+
+
+.institut{  /* CODIGO PARA MODFICAR LA ESTRUCTURA DEL TITULO */
+  padding-top: 1,9%;
+  padding-inline: 1%;
+  background: linear-gradiental (aliceblue);
+  text-align: center;
+
+}
+
+
+
+.a{  /* CODIGO PARA MODFICAR LA BARRA LATERAL IZQUIERDA */
+  background-color: aliceblue;
+  float: left;
+  height: 550px;
+  width: 20%;
+}
+
+.b{  /* CODIGO PARA MODFICAR LA BARRA LATERAL DERECHA */
+  background-color: lightgray;
+  width: 18.9%;
+  height: 18.9%;
+}
+
+
+.calendari{  /* CODIGO PARA MODFICAR EL CALENDARI */
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#barraderecha{  /* CODIGO PARA MODFICAR LA BARRA LATERAL DERECHA */
+  background-color: gainsboro;
+  width: 530%;
+  height: 530px;
+  justify-content: center;
+  
+  }
+
+
+
+
+
+
+
+
+
