@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: gainsboro;
+}
+
+body {
+    background-color: aliceblue;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header { /* CODIGO PARA MODFICAR EL MENÚ */
+    background-color: gainsboro;
+  }
+  
+  nav { /* CODIGO PARA MODFICAR EL MENÚ */
+    background-color: gainsboro;
+    overflow: hidden;
+    height: 15%;
+  }
+  
+  nav a {  /* CODIGO PARA MODFICAR EL MENÚ */
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover { /* CODIGO PARA MODFICAR EL MENÚ */
+    background-color: #899aa7;
+    color: white;
+    background: #899aa7;
+   
+  }
+
+.menu {
+    background-color: black;
+    width: 100%;
+    text-align: left;
+    margin-top: auto;
+}
