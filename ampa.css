@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: aliceblue;
+  }
+
+  header {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
+
+  h1, h2 {
+    color:black;
+  }
+
+  p {
+    line-height: 1.6;
+
+  }
+
+  section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .ampatext {
+    color: black;
+    font-weight: bold;
+  }
+
+  .propuestas, .ofrece, .projects, .members, .how-to-join {
+    margin-bottom: 20px;
+  }
+
+  .membership-fee {
+    color:black;
+    font-weight: bold;
+  }
+
+  .membership-fee ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .contact-email {
+    color:black;
+    font-weight: bold;
+  }
+
+  .flecha{  /* CODIGO PARA MODFICAR EL LADO DE LA FLECHA  */ 
+    padding-left: 100%;
+    
+    }
+    
+ button:hover {
+        background-color: black;
+    }
+
+#derecha{
+padding-left: 80%;
+height: 50px;
+
+  }
+
+  body { /* CODIGO PARA MODFICAR EL MENÚ */
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header { /* CODIGO PARA MODFICAR EL MENÚ */
+      background-color: gainsboro;
+    }
+    
+    nav { /* CODIGO PARA MODFICAR EL MENÚ */
+      background-color: gainsboro;
+      overflow: hidden;
+    }
+    
+    nav a {  /* CODIGO PARA MODFICAR EL MENÚ */
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    nav a:hover { /* CODIGO PARA MODFICAR EL MENÚ */
+      background-color: #899aa7;
+      color: white;
+      background: #899aa7;
+    }
+    
+    
+    
+    .menu{   /* CODIGO PARA MODFICAR EL FONDO DEL MENU */
+    background-color: black;
+    width: 100%;
+    text-align: left;
+    
+    }
