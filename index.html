@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INS CASTELLÓ</title>
+    <link rel="stylesheet" href="Index.css">
+
+    <link rel="icon" href="imagenes/LOGO INS.gif" type="image/x-icon">
+</head>
+<body>
+
+
+  <div id="container">  <!-- ABRO DIV PARA CONTAINER --> 
+        <header>
+            <h1 class="institut"> INSTITUT CASTELLÓ D'EMPURIES </h1>
+
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Menú Desplegable</title>
+                <link rel="stylesheet" href="pagina.css">
+
+        
+                <nav class="menu"> <!-- PRINCIPI DEL CODI PEL MENU -->   
+
+                    <a href="Horari.html">Horaris</a>
+                   <a href="Qui som.html">Qui som?</a>
+                   <a href="Ampa.html">Ampa</a>
+                   <a href="Contacte.html">Contacto</a>
+                   <a href="https://agora.xtec.cat/iescastellodempuries/item/informacio-families/">Informacio families</a>
+                  
+                
+                </nav>  <!-- FINAL DEL CODI PEL MENU -->   
+
+   </div>  <!-- CIERRO DIV PARA CONTAINER -->          
+
+<!-- PRINCIPI DEL CODI PEL CALENDARI -->  
+  <script>  
+
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const table = document.querySelector('#calendario');
+                        const monthYearElement = document.querySelector('#mes-anio');
+                        const months = ['Gener', 'Febrer', 'Març', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre'];
+                
+                        let currentMonth = new Date().getMonth();
+                        let currentYear = new Date().getFullYear();
+                
+                        function renderCalendar() {
+                            table.innerHTML = '';
+                
+                            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+                            let dayCounter = 1;
+                
+                            for (let i = 0; i < 6; i++) {
+                                const row = document.createElement('tr');
+                
+                                for (let j = 0; j < 7; j++) {
+                                    const cell = document.createElement('td');
+                
+                                    if (i === 0 && j < new Date(currentYear, currentMonth, 1).getDay()) {
+                                       
+                                        cell.textContent = '';
+                                    } else if (dayCounter <= daysInMonth) {
+                                     
+                                        cell.textContent = dayCounter;
+                                        dayCounter++;
+                                    }
+                
+                                    cell.addEventListener('click', function() {
+                                      
+                                        console.log(`Clic en el día ${this.textContent} de ${months[currentMonth]} ${currentYear}`);
+                                    });
+                
+                                    row.appendChild(cell);
+                                }
+                
+                                table.appendChild(row);
+                            }
+                
+                            monthYearElement.textContent = `${months[currentMonth]} ${currentYear}`;
+                        }
+                
+                        renderCalendar();
+                
+                        
+                        const prevButton = document.createElement('button');
+                        prevButton.textContent = 'Anterior';
+                        prevButton.addEventListener('click', function() {
+                            currentMonth--;
+                            if (currentMonth < 0) {
+                                currentMonth = 11;
+                                currentYear--;
+                            }
+                            renderCalendar();
+                        });
+                
+                        const nextButton = document.createElement('button');
+                        nextButton.textContent = 'Següent';
+                        nextButton.addEventListener('click', function() {
+                            currentMonth++;
+                            if (currentMonth > 11) {
+                                currentMonth = 0;
+                                currentYear++;
+                            }
+                            renderCalendar();
+                        });
+                
+                        document.querySelector('#calendario-container').insertAdjacentElement('beforebegin', prevButton);
+                        document.querySelector('#calendario-container').insertAdjacentElement('afterend', nextButton);
+                    });
+            
+                
+</script> <!-- FINAL DEL CODI PEL CALENDARI -->  
+
+<!-- COMENÇAMENT CODI PER LA BARRA LATERAL ESQUERRA --> 
+
+    <div class="a">
+
+         <h2><p class="calendari"> <strong> Calendari 23/24 </strong></p></h2> 
+
+        <div id="calendario-container" >
+
+            <div id="mes-anio"> </div>
+
+            <table id="calendario"> </table>
+
+ <aside right>
+
+         </div> 
+  
+</aside>
+    
+   <div>  <!--PRINCIPI DEL DIV AMB ELS CODIS PER ELS LOGOS D'APLICACIONS ENLLAÇADES --> 
+
+         <img  src="https://agora.xtec.cat/iescastellodempuries/wp-content/uploads/usu1409/2016/07/logonou.gif" width="80%" height="20%" alt=" LOGO INS "> </a>
+  
+        <a href="https://www.instagram.com/inscastello/">
+        <img src="imagenes/instagram.png" width="25%" height="10%" alt=" Instagram "> </a>
+   
+ 
+        <a href="https://www.youtube.com/channel/UCJW7ycPp49PgUFDeLe8-fgQ">
+        <img  src="imagenes/youtube.png" width="25%" height="10%" alt=" Youtube "> </a>
+  
+
+        <a href=" https://www.facebook.com/InsCastello/">
+   <img src="imagenes/facebook.png" width="25%" height="10%" alt=" Facebook " target="_blank"> </a>
+   
+   
+   
+</div> <!--FINAL DEL CODI PER LOGOS D'APLICACIONS ENLLAÇADES  --> 
+
+
+</div>  <!--FINAL DEL CODI PER LA BARRA LATERAL ESQUERRA --> 
+
+
+<div class="b"> <!--PRINCIPI DEL CODI PER LA BARRA LATERAL DRETA --> 
+
+
+</section>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <div id="barraderecha"> <!--CODI PER LA FOTO DEL INSTITUT --> 
+
+
+        <img src="https://www.elnacional.cat/uploads/s1/12/13/11/15/institut-castello-empuries-google-maps.jpeg"  width="80%" height="100%"></img>
+
+        
+    </div>
+
+</div> <!--FINAL DEL CODI PER LA BARRA LATERAL DRETA  --> 
+
+    
+  </body><head>
